@@ -1,0 +1,143 @@
+/* Generic Classes*/
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.windowWidth {
+    width: var(--display-width);
+}
+
+/* Custom Classes */
+
+.contentMain {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    margin: 1%;
+    width: 100%;
+}
+
+.textTitle {
+    font-size: 18px;
+    color: #333;
+}
+
+.inputTarefa {
+    width: 200px;
+    margin: 0px 10px;
+
+}
+
+.addTarefaButtonContainer {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
+    transition: ease;
+}
+
+.addTarefaButtonContainer:hover {
+    background-color: rgb(46, 185, 46);
+}
+
+.addTarefaButtonContainer:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.addTarefaButton {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.tarefaList {
+    display: flex;
+    flex-direction: row;
+}
+
+.tarefaElement {
+    margin: 0px 20px;
+}
+
+.deleteTarefaButton {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(199, 51, 51);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    margin: 5px 0px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
+    transition: ease;
+}
+
+.deleteTarefaButton:hover {
+    background-color: red;
+}
+
+.deleteTarefaButton:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.editTarefaButton {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    margin: 5px 0px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
+    transition: ease;
+}
+
+.editTarefaButton:hover {
+    background-color: turquoise;
+}
+
+.editTarefaButton:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contentMain {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        margin: 1%;
+        width: 100%;
+    }
+
+    .tarefaList {
+        display: flex;
+        flex-direction: column;
+    }
+}
